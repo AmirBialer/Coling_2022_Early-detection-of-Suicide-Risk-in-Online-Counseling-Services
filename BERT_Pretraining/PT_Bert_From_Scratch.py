@@ -1,14 +1,11 @@
 import psutil
 import humanize
-import os
 import GPUtil as GPU
-import tokenizers, transformers
-from pathlib import Path
 from tokenizers import ByteLevelBPETokenizer
 from tokenizers.processors import BertProcessing
-from transformers import RobertaConfig, BertConfig
-from transformers import RobertaTokenizerFast,BertTokenizerFast
-from transformers import RobertaForMaskedLM, BertForMaskedLM
+from transformers import BertConfig
+from transformers import BertTokenizerFast
+from transformers import BertForMaskedLM
 from transformers import LineByLineTextDataset
 from transformers import DataCollatorForLanguageModeling
 from transformers import Trainer, TrainingArguments
